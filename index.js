@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 4000;
 app.use(express.json());
 
 const blogs = require("../Blog app/routes/blogs");
-app.use("/api/V1",blogs);
+app.use("/api/v1",blogs);
 const dbConnect = require("./config/database");
 dbConnect();
 
